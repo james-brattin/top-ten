@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen;
+    background: radial-gradient(circle at 70% 20%,
+      rgb(234, 88, 12) 0%,
+      rgb(185, 28, 28) 25%,
+      rgb(30, 64, 175) 50%,
+      rgb(88, 28, 135) 75%
+    );
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+  }
+}
+
+/* Adjust text colors for better contrast */
+h1, h2, h3, p {
+  @apply text-white;
+}
+
+/* Adjust card backgrounds for better contrast */
+.card, .bg-white {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20;
+}
